@@ -1,0 +1,82 @@
+{
+  // Package
+  "package": {
+    "prefix": "pkg",
+    "body": "package ${1:name}",
+    "description": "Create a new package"
+  },
+  "package main": {
+    "prefix": "pmn",
+    "body": "package main\n\nfunc main() {\n    ${1}\n}",
+    "description": "Create a package main"
+  },
+  // Functions
+  "function no param": {
+    "prefix": "fnn",
+    "body": "func ${1:name}() {\n    ${2}\n}",
+    "description": "Create a new function without parameters"
+  },
+  "function with param": {
+    "prefix": "fnc",
+    "body": "func ${1:name}(${2:param} ${3:type}) {\n    ${4}\n}",
+    "description": "Create a new function with a parameter"
+  },
+  "function main": {
+    "prefix": "fnm",
+    "body": "func main() {\n    ${1}\n}",
+    "description": "Create a new main function"
+  },
+  // Declarations
+  "variable block": {
+    "prefix": "vab",
+    "body": "var (\n    ${1}\n)",
+    "description": "Create a new variable block"
+  },
+  "constant block": {
+    "prefix": "cob",
+    "body": "const (\n    ${1}\n)",
+    "description": "Create a new constant block"
+  },
+  // Print
+  "print": {
+    "prefix": "fpt",
+    "body": "fmt.Print(\"${1}\")",
+    "description": "Create a single print"
+  },
+  "print ln": {
+    "prefix": "fpl",
+    "body": "fmt.Println(\"${1}\")",
+    "description": "Create a single print with new line"
+  },
+  // Statements
+  "if statement": {
+    "prefix": "ifs",
+    "body": "if ${1} {\n    ${2}\n}",
+    "description": "Create a new simple if statement"
+  },
+  "if/else statement": {
+    "prefix": "ife",
+    "body": "if ${1:clause} {\n    ${2}\n} else {\n    ${3}\n}",
+    "description": "Create a new if/else statement"
+  },
+  "if err != nil": {
+    "prefix": "ier",
+    "body": "if ${1:err} != nil ier{\n    ${2}\n}",
+    "description": "Create a new if != nil statement"
+  },
+  "switch statement": {
+    "prefix": "swc",
+    "body": "switch ${1:expression} {\ncase ${2:condition}:\n${3}\n}",
+    "description": "Create a new simple switch statement"
+  },
+  "for count statement": {
+    "prefix": "foc",
+    "body": "for ${1:i} := 0; ${1:i} < ${2:count}; ${1:i}++ {\n    ${3}\n}",
+    "description": "Create a new for statement with count"
+  },
+  "for range statement": {
+    "prefix": "frg",
+    "body": "for ${1:index}, ${2:item} := range ${3:list} {\n    ${4}\n}",
+    "description": "Create a new for/range statement"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "vscode-go-snippets",
+  "displayName": "VS Code Go Snippets",
+  "description": "Code snippets for Golang development in VS Code editor.",
+  "author": {
+    "name": "Otávio Monteiro Rossoni"
+  },
+  "publisher": "Otarossoni",
+  "icon": "media/extension-logo.png",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Otarossoni/vscode-go-snippets"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "go",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "keywords": ["snippets"]
+}
